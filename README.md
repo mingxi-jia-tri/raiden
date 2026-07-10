@@ -42,6 +42,16 @@ See the **[Installation guide](https://tri-ml.github.io/raiden/guide/installatio
 
 Run `rd <command> --help` for all options.
 
+1. spacemouse teleop
+```
+  # get spacemouse hid path
+  uv run scripts/spacemouse_ee_control.py --list
+  # start left arm
+  uv run scripts/spacemouse_ee_control.py --channel can_follower_l --path /dev/hidraw3
+  # start right arm
+  uv run scripts/spacemouse_ee_control.py --channel can_follower_r --path /dev/hidraw2
+```
+
 ## Roadmap
 
 The following features are coming soon:
